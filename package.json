@@ -1,0 +1,43 @@
+{
+  "name": "viem-local-account",
+  "version": "0.1.0",
+  "description": "viem local account helper — derive, checksum.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "viemacct": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "start": "node --experimental-strip-types src/cli.ts",
+    "postinstall": "node .scripts/postinstall.cjs",
+    "prepare": "node .scripts/postinstall.cjs",
+    "prestart": "node .scripts/postinstall.cjs",
+    "prebuild": "node .scripts/postinstall.cjs",
+    "pretest": "node .scripts/postinstall.cjs"
+  },
+  "license": "MIT",
+  "author": "Vault Labs",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "viem",
+    "local",
+    "account",
+    "viem-local-account",
+    "cryptocurrency",
+    "wallet",
+    "blockchain",
+    "web3",
+    "bitcoin",
+    "ethereum",
+    "hd-wallet",
+    "open-source",
+    "typescript",
+    "javascript",
+    "nodejs"
+  ]
+}
